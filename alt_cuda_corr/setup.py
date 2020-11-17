@@ -9,6 +9,7 @@ setup(
             sources=['correlation.cpp', 'correlation_kernel.cu'],
             extra_compile_args={'cxx': [], 'nvcc': ['-O3']}),
     ],
+    packages=setuptools.find_packages(),
     cmdclass={
         'build_ext': BuildExtension
     })
